@@ -54,7 +54,7 @@ echo <<< HERE
 	      <li><a href="testnet.php">FusionCoin Testnet</a></li>
 	    </ul>
 	  </li>
-	  <li><a href="#">Forum</a></li>
+	  <li><a href="forum">Forum</a></li>
 	  <li><a href="#">Support</a></li>
 
         </ul>
