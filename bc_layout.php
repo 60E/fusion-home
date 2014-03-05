@@ -467,10 +467,11 @@ HERE;
 	
 	function section_subhead ($heading)
 	{
-		echo "		<div class=\"section_subhead\">\n";
-		echo "			".$heading."\n";
-		echo "		</div>\n";
-		echo "\n";
+		/* echo "		<div class=\"section_subhead\">\n"; */
+		/* echo "			".$heading."\n"; */
+		/* echo "		</div>\n"; */
+		/* echo "\n"; */
+	  echo "<tr><td colspan=2><span class='label label-important'>".$heading."</span></td></tr>";
 	}
 	
 /******************************************************************************
