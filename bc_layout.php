@@ -170,10 +170,10 @@ function site_home($network_info,$net_speed,$net_speed_scrypt) {
 		  $kind = "SHA256 Merged Mining";
 		  break;
 		case 4096:
-		  $kind = "Scypt";
+		  $kind = "Scrypt";
 		    break;
-		case 4354:
-		  $kind = "Scypt Merged Mining";
+		case 4352:
+		  $kind = "Scrypt Merged Mining";
 		  break;
 		}
 		
