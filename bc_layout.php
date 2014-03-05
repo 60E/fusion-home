@@ -18,6 +18,7 @@ echo <<< HERE
     <link rel="stylesheet" href="css/docs.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="block_crawler.css">
+    <link rel="shortcut icon" href="favicon.ico"/>    
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </head>
