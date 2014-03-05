@@ -60,7 +60,7 @@
 	function getnetworkhashps ($block_index=NULL)
 	{
 	//	The JSON-RPC request starts with a method name
-		$request_array["method"] = "getnetworkhashps";
+		$request_array["method"] = "getnetworkhashps_sha256d";
 	
 	//	block index is an optional parameter. If no block
 	//	index is specified you get the network hashrate for 
@@ -82,7 +82,7 @@
 	function getnetworkhashps_scrypt ($block_index=NULL)
 	{
 	//	The JSON-RPC request starts with a method name
-		$request_array["method"] = "getnetworkhashps";
+		$request_array["method"] = "getnetworkhashps_scrypt";
 	
 	//	block index is an optional parameter. If no block
 	//	index is specified you get the network hashrate for 
