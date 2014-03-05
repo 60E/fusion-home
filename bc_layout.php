@@ -74,9 +74,19 @@ HERE;
 		exit;
 	}
 
-function site_home($network_info,$net_speed) {
-  $blocklink =  "<a href=\"".$_SERVER["PHP_SELF"]."?block_height=".$network_info["blocks"]."\" title=\"View Block Details\">".$network_info["blocks"]."</a>\n";
+function show_hashrate($hashrate, $precision = 2)
+{
+    $unit = array('H/s','K H/s','M H/s','G H/s','T H/s','P H/s');
 
+    return @round(
+        $hashrate / pow(1024, ($i = floor(log($hashrate, 1024)))), $precision
+    ).' '.$unit[$i];
+}
+
+function site_home($network_info,$net_speed,$net_speed_scrypt) {
+  $blocklink =  "<a href=\"".$_SERVER["PHP_SELF"]."?block_height=".$network_info["blocks"]."\" title=\"View Block Details\">".$network_info["blocks"]."</a>\n";
+  $hashrate = show_hashrate($net_speed);
+  $hashrate_scrypt = show_hashrate($net_speed_scrypt);
   echo   "<div class=\"container\">";
   echo   "<h2  style=\"padding-bottom:10px\">FusionCoin Explorer</h2>";
   echo   "<div class=\"span6\"><table class=\"table table-striped\">";
@@ -90,7 +100,10 @@ function site_home($network_info,$net_speed) {
   echo   "<td>Connections</td><td>".$network_info["connections"]."</td>";
   echo   "</tr>";
   echo   "<tr>";
-  echo   "<td>Network H/s</td><td>".$net_speed."</td>";
+  echo   "<td>Network(SHA256)</td><td>".$hashrate."</td>";
+  echo   "</tr>";
+  echo   "<tr>";
+  echo   "<td>Network(Scrypt)</td><td>".$hashrate_scrypt."</td>";
   echo   "</tr>";
   echo   "</table>";
   echo   "</div>";
@@ -224,7 +237,7 @@ echo <<< HERE
 			<td>{$prevlink}</td>
                 </tr>
                 <tr>
-                    <td>Next Block(s)</td>
+                    <td>Next Block</td>
                      <td>{$nextlink}</td>
                 </tr>
                 <tr>

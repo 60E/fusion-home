@@ -40,7 +40,8 @@ else
     site_header ();
     $network_info = getinfo ();
     $net_speed = getnetworkhashps ();
-    site_home($network_info,$net_speed);
+    $net_speed_scrypt = getnetworkhashps_scrypt ();
+    site_home($network_info,$net_speed,$net_speed_scrypt);
   }
 	
 	
