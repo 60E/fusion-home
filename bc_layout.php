@@ -95,7 +95,10 @@ function site_home($network_info,$net_speed,$net_speed_scrypt) {
   echo   "<td>Block Count</td><td>".$blocklink."</td>";
   echo   "</tr>";
   echo   "<tr>";
-  echo   "<td>Difficulty</td><td>".$network_info["difficulty"]."</td>";
+  echo   "<td>Difficulty(SHA256)</td><td>".$network_info["difficulty_sha256"]."</td>";
+  echo   "</tr>";
+  echo   "<tr>";
+  echo   "<td>Difficulty(Scrypt)</td><td>".$network_info["difficulty_scrypt"]."</td>";
   echo   "</tr>";
   echo   "<tr>";
   echo   "<td>Connections</td><td>".$network_info["connections"]."</td>";
