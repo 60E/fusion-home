@@ -150,6 +150,8 @@ function site_home($network_info,$net_speed,$net_speed_scrypt) {
   echo "\n";
 
   echo "	</div>\n";  
+
+  include("genesis.html");
 }
 
 	function block_detail ($block_id, $hash=FALSE)
