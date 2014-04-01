@@ -40,9 +40,17 @@ echo <<< HERE
       <a class="ibrand" href="#">FusionCoin</a>
       <div class="nav-collapse collapse">
         <ul class="nav">
-	  <li><a href="index.html">Home</a></li>
+	  <li><a href="#">Home</a></li>
 	  <li class="dropdown">
-	    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pools<b class="caret"></b></a>
+	    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Download<b class="caret"></b></a>
+	    <ul class="dropdown-menu">
+	      <li><a href="https://mega.co.nz/#!D551FZJK!33-PSUHDMWSNxvelLmIBtczOXlxqGXtRAvmI-J5YGsE" target="_blank">Windows Client</a></li>
+	      <li><a href="https://github.com/fusioncoin/fusioncoin/archive/master.zip" target="_blank">Linux Client</a></li>
+	      <li><a href="https://github.com/fusioncoin/fusioncoin" target="_blank">GitHub Repo</a></li>
+	    </ul>
+	  </li>
+	  <li class="dropdown">
+	    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pool<b class="caret"></b></a>
 	    <ul class="dropdown-menu">
 	      <li><a href="fscbtc">Official Merged Mining Pool(BitCoin)</a></li>
 	      <li><a href="fscltc">Official Merged Mining Pool(LiteCoin)</a></li>
@@ -56,8 +64,7 @@ echo <<< HERE
 	    </ul>
 	  </li>
 	  <li><a href="forum">Forum</a></li>
-	  <li><a href="#">Support</a></li>
-
+	  <li><a href="https://bitcointalk.org/index.php?topic=512149.msg5655292#msg5655292" target="_blank">ANN on bitcointalk</a></li>
         </ul>
       </div>
     </div>
