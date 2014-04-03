@@ -52,8 +52,9 @@ echo <<< HERE
 	  <li class="dropdown">
 	    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pool<b class="caret"></b></a>
 	    <ul class="dropdown-menu">
-	      <li><a href="fscbtc">Official Merged Mining Pool(BitCoin)</a></li>
-	      <li><a href="fscltc">Official Merged Mining Pool(LiteCoin)</a></li>
+	      <li><a href="fscbtc">BitCoin+FusionCoin</a></li>
+	      <li><a href="fscltc">LiteCoin+FusionCoin</a></li>
+	      <li><a href="bonus">BonusCoin+FusionCoin</a></li>
 	    </ul>
 	  </li>
 	  <li class="dropdown">
